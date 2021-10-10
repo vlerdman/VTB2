@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="sources/main.css?1234">
+</head>
+<body style='font-family: "Roboto", sans-serif;background-color:#3A83F1 ; overflow-y: hidden;background-image: url("img/backTestb.png");'>
+	<div class="container">
+		<div class="col d-flex flex-column justify-content-start h-80vh" >
+			<div class="row justify-content-center pb-5 pt-3 mt-5">
+				<img class="col-3" src="img/logo2.png">
+				<img class="col-4" src="img/test.png" style="padding: 0;">
+			</div>
+			<img src="img/kotright.png" style="z-index:-1;position: relative; top: -145px;">
+		</div>
+		<div class="col-12 d-flex flex-column align-items-center" style='position: relative;top: -350px;'>
+			<div class="col-10 mb-5 " style="background-size: cover; padding-left: 10px; background-color: white;border-radius: 7px;"><p class="pt-3" id='kotext'>Привет! Меня зовут “XXXXXX”, и я буду сопровождать на всем пути нашего интересного и захватывающего приключения! Давай я задам несколько вопросов, чтобы получше узнать тебя, мой дорогой друг!</p></div>
+			<div class="col-10 mb-3 mt-5 chat" style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var1"><p class="pt-3">Первый вариант</p></div>
+			<div class="col-10 mb-3 chat" style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var2"><p class="pt-3">Первый вариант</p></div>
+			<div class="col-10 mb-3 chat" style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var3"><p class="pt-3">Первый вариант</p></div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="sources/main.js"></script>
+<script type="text/javascript" rel="script" src="frameworks/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript">
+trecker = 0;
+trekerFirst = 0;
+function quest2(ans) {
+				if(ans==1){
+					trekerFirst=1;
+					++trecker;
+				}
+				$('#kotext').text('Слышал ли ты фразу, что время съедает деньги?');
+				$('#var1').text('Данную фразу говорят экономисты, когда касаются очень острой темы на рынке...');
+				$('#var2').text('Данную фразу говорят банкиры, когда меняется валюта.');
+				$('#var3').text('Это было в каком-то фильме...');
+				$('.chat').attr('onclick','quest3(0);');
+				$('#var2').attr('onclick','quest3(1);');
+
+}
+function quest3(ans) {
+				if(ans==1){
+					++trecker;
+				}
+				$('#kotext').text('Как ты понимаешь эту фразу?');
+				$('#var1').text('Это все из-за инфляции.');
+				$('#var2').text('С течением времени деньги теряют свой номинал.');
+				$('#var3').text('Инфляция обесценивает деньги со временем. Они теряют свореальную стоимость.');
+				$('.chat').css({'position':'unset'});
+				$('.chat').attr('onclick','quest4(0);');
+				$('#var3').attr('onclick','quest4(1);');
+}
+function quest4(ans) {
+				if(ans==1){
+					++trecker;
+				}
+				$('#kotext').text('Имеешь ли ты вклад в банке?');
+				$('#var1').text('Всегда держу вклад открытым и перевожу туда свободные деньги, чтобы капал небольшой процент');
+				$('#var2').text('Да, открыт на всякий случай');
+				$('#var3').text('Открыл на полгода и закрыл, так как не увидел в нем смысла.');
+				$('.chat').attr('onclick','quest5(0);');
+				$('#var1').attr('onclick','quest5(1);');
+}
+function quest5(ans) {
+				if(ans==1){
+					++trecker;
+				}
+				$('#kotext').text('Как ты понимаешь фразу “деньги работают на меня и приносят доход”?');
+				$('#var1').text('Дал другу 100 рублей в долг, а он мне вернул 110');
+				$('#var2').text('Закопал золотую монетку, а выросло денежное дерево, как в Буратино...');
+				$('#var3').text('Деньги находятся в обороте и приносят мне определенный процент дохода.');
+				$('.chat').css({'position':'unset'});
+				$('.chat').attr('onclick','endTest(0);');
+				$('#var3').attr('onclick','endTest(1);');
+}
+function endTest(ans) {
+				if(ans==1){
+					++trecker;
+				}
+				$('#kotext').text('Ты справился! Теперь идем дальше!');
+				$('#var1').text('Продолжить');
+				$('#var1').attr('onclick','endTestZakl();');
+				$('#var2').css({'display':'none'});
+				$('#var3').css({'display':'none'});
+}
+function endTestZakl() {
+	if((trecker+trekerFirst)==5){
+		window.location.href = 'main.html?player=1';
+	}
+	else{
+		window.location.href = 'lavel1.html';
+	}
+}
+	
+$( document ).ready(function() {
+	$('.chat').css({'position':'relative','top':'100vh'});
+	touches=0;
+	$('body').click(function (){
+		++touches;
+		switch(touches){
+			case(1):
+				$('#kotext').text('Инвестировал ли ты раньше?');
+				$('#var1').text('Нет, но очень хотелось бы');
+				$('#var2').text('Да, так как многое изучал и знаю, что это принесет мне доход');
+				$('#var3').text('Все инвестировали, поэтому и я иневестировал. без цели.');
+				$('.chat').css({'position':'unset'});
+				$('.chat').attr('onclick','quest2(0);');
+				$('#var2').attr('onclick','quest2(1);');
+				break;
+			case(2):
+				
+				break;
+			case(3):
+				
+				break;
+			case(4):
+				
+				break;
+			case(5):
+				
+				break;
+		}
+	});
+	});
+</script>
+</html>

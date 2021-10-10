@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="sources/main.css?12345">
+</head>
+<body style='font-family: "Roboto", sans-serif; overflow-y: hidden;overflow-x: hidden;'>
+	<div class="container">
+		<div class="col d-flex flex-column justify-content-start h-80vh" >
+			<div class="row justify-content-center pb-4 pt-3 mt-5">
+				<img class="col-5" src="img/logo3.png">
+			</div>
+			<div class="col-12 p-2 mb-2">
+
+				<div  id='swipeDiv' style="position: absolute;height: 45vh;width: 90vw; z-index: 6;"></div>
+
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff" id='swipper1' style="z-index: 5;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 d-flex flex-row justify-content-around">
+						<img src="img/bar/minizlo.png" style="max-height: 50px;">
+						<img class="barZlo" src="img/bar/1.png" style="max-height: 50px;">
+					</div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Сейчас начнётся игра с боссом, готовы ли Вы?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>Я рождён готовым</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>Уже?</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff"  style="z-index: 4;" id='swipper2'>
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 d-flex flex-row justify-content-around">
+						<img src="img/bar/minizlo.png" style="max-height: 50px;">
+						<img class="barZlo" src="img/bar/1.png" style="max-height: 50px;">
+					</div>
+					<div class="col-12 mt-3 mb-3 lvl2style3" id='quest1'>
+						Сейчас начнётся игра с боссом, готовы ли Вы?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div id="ans11">Я рождён готовым</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div id="ans12">Уже?</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff"  style="z-index: 3;" id='swipper3'>
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 d-flex flex-row justify-content-around">
+						<img src="img/bar/minizlo.png" style="max-height: 50px;">
+						<img class="barZlo" src="img/bar/1.png" style="max-height: 50px;">
+					</div>
+					<div class="col-12 mt-3 mb-3 lvl2style3"  id='quest2'>
+						Сейчас начнётся игра с боссом, готовы ли Вы?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div  id="ans21">Я рождён готовым</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div id="ans22">Уже?</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff"  style="z-index:2;" id='swipper4'>
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 d-flex flex-row justify-content-around">
+						<img src="img/bar/minizlo.png" style="max-height: 50px;">
+						<img class="barZlo" src="img/bar/1.png" style="max-height: 50px;">
+					</div>
+					<div class="col-12 mt-3 mb-3 lvl2style3"  id='quest3'>
+						Сейчас начнётся игра с боссом, готовы ли Вы?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div id="ans31">Я рождён готовым</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div  id="ans32">Уже?</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff"  style="z-index: 1;" id='swipper5'>
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 d-flex flex-row justify-content-around">
+						<img src="img/bar/minizlo.png" style="max-height: 50px;">
+						<img class="barZlo" src="img/bar/1.png" style="max-height: 50px;">
+					</div>
+					<div class="col-12 mt-3 mb-3 lvl2style3"  id='quest4'>
+						Сейчас начнётся игра с боссом, готовы ли Вы?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div id="ans41">Я рождён готовым</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div id="ans42">Уже?</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1" id='swipper200' style="z-index: 5;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 d-flex flex-row justify-content-around">
+						<img src="img/bar/minizlo.png" style="max-height: 50px;">
+						<img class='barZlo' src="img/bar/1.png" style="max-height: 50px;">
+					</div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Еще чуть-чуть и ты сможешь преодолеть страк инвестиций!
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>Замечательно!</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>Круто!</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+
+
+			</div>
+			<div class="col-12 p-2 mt-1">
+				<div class="w-100pr chatb pt-5 lvl2style6" style=" background-image: url('img/backDiv.svg');">
+					<div id='bigtext' class="mb-4">У тебя отлично получается, ты можешь начать инвестировать сейчас с ВТБ инвестициями! </div>
+					<div id='smalltext' id='bigtext' class="d-flex flex-row justify-content-end" >Начать инвестировать!</div>
+				</div>
+			</div>
+		</div>
+		<div class="col d-flex flex-column justify-content-end h-20vh" >
+			<div class="row lvl2style7">
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu1.png"></div>
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu22.png" onclick='window.location.href="main.html"'></div>
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu3.png" onclick='window.location.href="index.html"'></div>
+			</div>
+		</div>
+	</div>
+	<div id='kotextall'>
+		<div class="greyBlured" style="width:100vw;height: 100vh; opacity: 0.1;background-color: #090909;z-index: 10;position: absolute;top: 0;left: 0;"></div>
+		<img src="img/kotright.png" style="z-index:11;position: absolute; top: 0; left: 0;">
+		<div class="col-10 mb-5" style="background-image: url('img/chat.png');background-size: cover; height: 113px;padding-left: 10px;color:white; position: absolute;top: 285px;left: 27px;z-index: 12;"><p id='kotext' class="pt-3" style="z-index: 15;color: black; ">Что для тебя важнее увеличить количество денежных средств или потерять их с течением времени в ходе инфляции?</p></div>
+		<div class="axc"><div class="col-10 mb-3 mt-5 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var1"><p class="pt-3" onclick='pattern2()'>Сохранить</p></div>
+			<div class="col-10 mb-3 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var2"><p  onclick='pattern3()' class="pt-3">Сохранить, но немного подзаработать</p></div>
+			<div class="col-10 mb-3 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var3"><p  onclick='pattern4()' class="pt-3">Готов рисковать, чтобы получить больше</p></div></div>
+	</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="sources/main.js"></script>
+<script type="text/javascript" rel="script" src="frameworks/jquery.touchSwipe.min.js"></script>
+<style type="text/css">
+	.swipperOff{
+		position: absolute;
+		top: 145px;
+		max-width: 335px;
+	}
+</style>
+
+<script>
+	function pattern2() {
+		$('#kotextall').css({'display':'none'});
+		$('#quest1').text('Как думаете, что такое облигации?');
+		$('#quest2').text('Раз это долговая расписка, то как вам будут возвращенны деньги?');
+		$('#quest3').text('Если вкладываться в муниципальные или государственные организации, возможно ли не получить прибыль?');
+		$('#quest4').text('Если вкладываться в облигации компаний, то можно ли не получить прибыль?');
+		$('#ans11').text('Какая то бумажка, как в фильмах');
+		$('#ans12').text('Долговая расписка от компании или государства');
+		$('#ans21').text('Без процентов');
+		$('#ans22').text('С процентом');
+		$('#ans32').text('Да, они же могут обмануть');
+		$('#ans31').text('Нет, потому что таакие акции обеспеченны государством');
+		$('#ans42').text('Нет, это же компании, они не могут обмануть');
+		$('#ans41').text('Да, потому что у некоторых компаний облигации подкрепленны ничем');
+		$('#bigtext').text('А вы знали, что преобрести облегации можно у нас в приложении ВТБ инвестиции');
+	}
+	function pattern3() {
+		$('#kotextall').css({'display':'none'});
+		$('#quest1').text('Нужно ли покупать ценные бумаги разных видов?');
+		$('#quest2').text('Правило Баффета состоит в том, что 70% состовляют акции, а 30% облигации?');
+		$('#quest3').text('Если вкладываться в муниципальные или государственные организации, возможно ли не получить прибыль?');
+		$('#quest4').text('Если вкладываться в облигации компаний, то можно ли не получить прибыль?');
+		$('#ans11').text('Нет, вложу все в акции');
+		$('#ans12').text('Да, чтобы портфель был сбалансирован');
+		$('#ans21').text('Нет');
+		$('#ans22').text('Да');
+		$('#ans32').text('Да, они же могут обмануть');
+		$('#ans31').text('Нет, потому что таакие акции обеспеченны государством');
+		$('#ans42').text('Нет, это же компании, они не могут обмануть');
+		$('#ans41').text('Да, потому что у некоторых компаний облигации подкрепленны ничем');
+		$('#bigtext').text('Знаете ли вы, что в приложении ВТБ инвестиции есть робот,который поможет сбалансировать ваш портфель?');
+	}
+	function pattern4() {
+		$('#kotextall').css({'display':'none'});
+		$('#quest1').text('Какое из определений понятия акции вам кажется наиболее уместным?');
+		$('#quest2').text('Правда ли то, что вы можете купить. как привилигированные так и обычные акции?');
+		$('#quest3').text('Американские акции и отечественные имеют разный налог?');
+		$('#quest4').text('Нужно ли балансировать портфель по всем секторам бизнеса?');
+		$('#ans11').text('О, я покупаю в девяточке по акции');
+		$('#ans12').text('Акции это ценная бумага, которую выпускает акционерное общество, другими словами - компания - энитент');
+		$('#ans21').text('Нет, я же обычный инвестор и могу купить только обычные');
+		$('#ans22').text('Да, а в зависимости от выбора типа акции, будут зависеть мои дивиденды');
+		$('#ans32').text('Не ложь, а положение ');
+		$('#ans31').text('Правда');
+		$('#ans42').text('Не нужно все вкладывать в одну отрасль');
+		$('#ans41').text('Да, чтобы не уйти в минус, если какая то отрасль просядет');
+		$('#bigtext').text('Знаете ли вы, что в приложении ВТБ инвестиции есть подборки акций с высокой доходностью, которые вы можете преобрести уже сейчас!');
+	}
+</script>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+	$('.axc').css({'position':'absolute','bottom':'20px','z-index':'14','min-width':'100vw','left':'30px'});
+	});
+</script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		i=1;
+		barI=1;
+		jQuery('#swipeDiv').swipe({
+    swipeStatus:function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection)
+    {
+        if (phase=="end"){ 
+            if (direction == 'right') {
+            	$('#swipper'+i).animate({right: '-360px'});
+            	switch (i) {
+				  case 1:
+				    $('.barZlo').attr('src','img/bar/'+(barI+1)+'.png');
+				    barI+=1;
+				    break;
+				  case 2:
+
+				    break;
+				  case 3:
+
+				    break;
+				  case 4:
+				    $('.barZlo').attr('src','img/bar/'+(barI+1)+'.png');
+				    barI+=1;
+				    break;
+				  case 5:
+				    $('.barZlo').attr('src','img/bar/'+(barI+1)+'.png');
+				    barI+=1;
+				    break;
+				  case 6:
+				  	window.location.href='lavel3.html';
+				  	break;
+				}
+            	i+=1;
+            }
+            if (direction == 'left') {
+               $('#swipper'+i).animate({right: '400px'});
+               switch (i) {
+				  case 1:
+				  	$('.barZlo').attr('src','img/bar/'+(barI+1)+'.png');
+				    barI+=1;
+				    break;
+				  case 2:
+				    $('.barZlo').attr('src','img/bar/'+(barI+1)+'.png');
+				    barI+=1;
+				    break;
+				  case 3:
+				    $('.barZlo').attr('src','img/bar/'+(barI+1)+'.png');
+				    barI+=1;
+				    break;
+				  case 4:
+
+				    break;
+				  case 5:
+				    break;
+				  case 6:
+				  	window.location.href='lavel3.html';
+				  	break;
+				}
+               i+=1;
+            }
+            
+        }
+     },
+     triggerOnTouchEnd:false,
+     threshold:50
+    });
+	});
+</script>
+</html>

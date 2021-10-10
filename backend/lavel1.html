@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="sources/main.css?12345">
+</head>
+<body style='font-family: "Roboto", sans-serif; overflow-y: hidden;overflow-x: hidden;'>
+	<div class="container">
+		<div class="col d-flex flex-column justify-content-start h-80vh" >
+			<div class="row justify-content-center pb-4 pt-3 mt-5">
+				<img class="col-5" src="img/1.png">
+			</div>
+			<div class="col-12 p-2 mb-2">
+				
+				<div id="div1" class="chatb d-flex flex-column justify-content-center align-items-space" style="height: 70vh;padding-left: 40px; padding-right: 10px;">
+					<h1>Где лучше хранить деньги?</h1>
+					<h3>В банке</h3>
+					<p>За 10 лет 100 000 р. превратятся <br> в 148 000 р.</p>
+					<h3>В инвестициях</h3>
+					<p>За 10 лет 100 000 р. превратятся <br> в 400 004 р.</p>
+					<h3>Под подушкой</h3>
+					<p>За 10 лет 100 000 р. превратятся <br> в 68 000 р.</p>
+					<div class="col-10"><a id='buttonIn' class="btn btn-figma-blue-off w-100pr" onclick="pattern2()"> понятно </a></div>
+				</div>
+
+				<div id="div3" class="chatb d-flex flex-column justify-content-center align-items-space" style="opacity: 0; height: 70vh;padding-left: 40px; padding-right: 10px;position: absolute;top: 1600px;left: 20px;max-width: 335px;">
+					<h1>Как думаешь?</h1>
+					<h3>Какова была бы стоимость твоего портфеля, если бы до кризиса его стоимость состовляла 100 000 р. и сколько бы она стоял сейчас?</h3>
+
+					<div class="col-10"><a id='buttonIn' class="btn btn-figma-blue-off w-100pr" onclick="pattern4(1)"> 14 000 р. / 110 000 р. </a></div>
+
+					<div class="col-10"><a id='buttonIn' class="btn btn-figma-blue-off w-100pr" onclick="pattern4(2)"> 49 000 р. / 558 000 р. </a></div>
+
+					<div class="col-10"><a id='buttonIn' class="btn btn-figma-blue-off w-100pr" onclick="pattern4(3)"> 71 000 р. / 215 000 р. </a></div>
+					
+				</div>
+
+
+
+				<div  id='swipeDiv' style="display: none;position: absolute;height: 45vh;width: 90vw; z-index: 6;top: 145px;"></div>
+				<!--NEW-->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff div22" id='swipper1' style="z-index: 5;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2" style="text-align: center;">Угадаем стоимость акций</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Сколько стоит акция "ГАЗПРОМ"?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>366 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>2137 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+
+				<!--NEW-->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff div22" id='swipper2' style="z-index: 4;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2" style="text-align: center;">Угадаем стоимость акций</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Сколько стоит акция "FORD"?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>1125 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>4542 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+
+				<!--NEW-->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff div22" id='swipper3' style="z-index: 3;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2" style="text-align: center;">Угадаем стоимость акций</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Сколько стоит акция "ВТБ"?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>715 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>0.05 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+
+				<!--NEW-->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff div22" id='swipper4' style="z-index: 2;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2" style="text-align: center;">Угадаем стоимость акций</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Сколько стоит акция "ЯНДЕКС"?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>5700 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>7500 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+
+				<!--NEW-->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff div22" id='swipper5' style="z-index: 1;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2" style="text-align: center;">Угадаем стоимость акций</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Сколько стоит акция "МАЙЛ РУ"?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>1400 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>9200 р.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+
+			
+
+
+			</div>
+			
+		</div>
+		<div class="col d-flex flex-column justify-content-end h-20vh" >
+			<div class="row lvl2style7">
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu1.png"></div>
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu22.png" onclick='window.location.href="main.html"'></div>
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu3.png" onclick='window.location.href="index.html"'></div>
+			</div>
+		</div>
+	</div>
+	<div id='kotextall'>
+		<div class="greyBlured" style="width:100vw;height: 100vh; opacity: 0.1;background-color: #090909;z-index: 10;position: absolute;top: 0;left: 0;"></div>
+		<img src="img/kotright.png" style="z-index:11;position: absolute; top: 0; left: 0;">
+		<div class="col-10 mb-5" style="background-image: url('img/chat.png');background-size: cover; height: 113px;padding-left: 10px;color:white; position: absolute;top: 285px;left: 27px;z-index: 12;"><p id='kotext' class="pt-3" style="z-index: 15;color: black; ">Начнем с еще пары вопросов:</p></div>
+		<div class="axc"><div class="col-10 mb-3 mt-5 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var1"><p class="pt-3">В банке</p></div>
+			<div class="col-10 mb-3 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var2"><p class="pt-3">Под подушкой</p></div>
+			<div class="col-10 mb-3 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var3"><p class="pt-3">В инвестициях</p></div></div>
+	</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="sources/main.js"></script>
+<script type="text/javascript" rel="script" src="frameworks/jquery.touchSwipe.min.js"></script>
+<style type="text/css">
+	.swipperOff{
+		position: absolute;
+		top: 145px;
+		max-width: 335px;
+	}
+	.div22{
+		display: none;
+	}
+</style>
+<script type="text/javascript">
+	$( document ).ready(function() {
+	$('.axc').css({'position':'absolute','top':'0px','z-index':'14','display':'none'});
+	touches=0;
+	$('body').click(function (){
+		++touches;
+		switch(touches){
+			case(1):
+				$('#kotextall').css({'display':'none'});
+				break;
+			case(11):
+				$('#kotext').text('Но некоторые уверенны, что инвестиции это дорого.');
+				break;
+			case(12):
+				$('#kotext').text('Давай я докажу тебе, что это не так!');
+				break;
+			case(13):
+				$('#kotextall').css({'display':'none'});
+				$('#div1').css({'opacity':'0'});
+				$('.div22').css({'display':'unset'});
+				$('#swipeDiv').css({'display':'unset'});
+				break;
+			case(201):
+				$('#kotext').text('А еще говорят, что самый большой страх инвестора - кризис.');
+				break;
+			case(202):
+				$('#kotext').text('Но давай посмотрим так ли это на самом деле.');
+				break;
+			case(203):
+				$('#kotextall').css({'display':'none'});
+				$('.div22').css({'display':'none'});
+				$('#div3').css({'opacity':'1','top':'150px'});
+				break;
+			case(302):
+				$('#kotext').text('И как видишь кризис это совершенно не страшно.');
+				break;
+			case(303):
+				$('#kotext').text('И даже не смотря на просадку портфеля, сейчас наш портфель очень дорогой!');
+				break;
+			case(304):
+				$('#kotext').text('Теперь время научить тебя всем основам инвестиций!');
+				break;
+			case(305):
+				window.location.href = 'lavel2.html';
+				break;
+		}
+	});
+	});
+</script>
+<script type="text/javascript">
+	function pattern2(){
+		touches=10;
+		$('#kotext').text('Но некоторые уверенны, что инвестиции это дорого.');
+		$('#kotextall').css({'display':'unset'});
+	}
+	function pattern3(){
+		touches=200;
+		$('#kotext').text('Как ты смог заметить, инвестирование это не про большие затраты, но про большие выйгрыши.');
+		$('#kotextall').css({'display':'unset'});
+	}
+	function pattern4(ans){
+		touches=300;
+		if (ans!=2) {
+			$('#kotext').text('На самом деле правильный ответ 49 000 р. / 558 000 р. .');
+			$('#kotextall').css({'display':'unset'});
+		}
+		else{
+			$('#kotext').text('У тебя отличная интуиция!');
+			$('#kotextall').css({'display':'unset'});
+		}
+		
+	}
+</script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		i=1;
+		barI=1;
+		jQuery('#swipeDiv').swipe({
+    swipeStatus:function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection)
+    {
+        if (phase=="end"){ 
+            if (direction == 'right') {
+            	$('#swipper'+i).animate({right: '-360px'});
+            	switch (i) {
+				  case 1:
+
+				    barI+=1;
+				    break;
+				  case 2:
+
+				    break;
+				  case 3:
+
+				    break;
+				  case 4:
+
+				    barI+=1;
+				    break;
+				  case 5:
+
+				    pattern3();
+				    break;
+				}
+            	i+=1;
+            }
+            if (direction == 'left') {
+               $('#swipper'+i).animate({right: '400px'});
+               switch (i) {
+				  case 1:
+
+				    break;
+				  case 2:
+
+				    barI+=1;
+				    break;
+				  case 3:
+
+				    barI+=1;
+				    break;
+				  case 4:
+
+				    break;
+				  case 5:
+				  pattern3();
+				    break;
+				}
+               i+=1;
+            }
+            
+        }
+     },
+     triggerOnTouchEnd:false,
+     threshold:50
+    });
+	});
+</script>
+</html>

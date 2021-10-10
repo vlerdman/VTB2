@@ -1,0 +1,71 @@
+.h-80vh{
+	height: 80vh;
+}
+.h-20vh{
+	height: 20vh;
+}
+.w-100pr{
+	width: 100%;
+}
+.btn-figma-blue{
+	background: #3A83F1;border: 2px solid #3A83F1;
+	box-sizing: border-box;
+	border-radius: 7px;font-weight: 700; color: #ffffff;
+}
+.color-figma-blue{
+	color: #3A83F1;
+	text-decoration: none;
+}
+.input-figma-1{
+	background: #FAFAFA;
+	border: 1.5px solid #89B5F7;
+	box-sizing: border-box;
+	border-radius: 7px;
+	line-height: 45px;
+	padding-left: 16px;
+	font-size: 14px;
+	color: #89B5F7;
+}
+.btn-figma-blue-off{
+	background: #EBF3FE;
+	border-radius: 7px;
+	color: #14315C;
+	border: 2px solid #3A83F1;
+}
+.chat{
+	background: #FAFAFA;
+	border-radius: 7px;
+	background-color: white; 
+	height: 55px;
+	padding-left: 10px;
+	color: #3A83F1;
+}
+.chatb{
+	background: #3A83F1;
+	border-radius: 7px;
+	background-color: #3A83F1; 
+	height: 55px;
+	padding-left: 10px;
+	color: #FAFAFA;
+}
+.lvl2style1{
+	height: 45vh; background-color: #3A83F1;padding-right: 10px;
+}
+.lvl2style2{
+	font-weight:700;font-size: 28px;font-style: normal;line-height: 32px;
+}
+.lvl2style3{
+	font-weight:500;font-size: 18px; line-height: 21px;padding-left: 16px;
+}
+.lvl2style4{
+	height:20% !important;background-color: #FAFAFA;padding-right: 15px; padding-left: 15px;
+}
+.lvl2style5{
+	height:20% !important;background-color: #FAFAFA;padding-right: 15px; padding-left: 15px;
+}
+.lvl2style6{
+	height: 20vh;background-size: contain; padding-left: 27px;padding-right: 27px;font-weight: 500;font-size: 16px;line-height: 19px;
+}
+.lvl2style7{
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);backdrop-filter: blur(27.1828px);
+}

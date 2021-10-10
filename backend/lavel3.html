@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="sources/main.css?12345">
+</head>
+<body style='font-family: "Roboto", sans-serif; overflow-y: hidden;overflow-x: hidden;'>
+	<div class="container">
+		<div class="col d-flex flex-column justify-content-start h-80vh" >
+			<div class="row justify-content-center pb-4 pt-3 mt-5">
+				<img class="col-3" src="img/logo.png">
+				<img class="col-4" src="img/vtb.png">
+			</div>
+			<div class="col-12 p-2 mb-2">
+
+				<div  id='swipeDiv' style="position: absolute;height: 45vh;width: 90vw; z-index: 6;"></div>
+
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff" id='swipper1' style="z-index: 5;height: 65vh;">
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3">
+						Вы прочитали новость о том, что Сибур планирует выкупить большой процент акций КазаньОргСинтез. Что нужно сделать?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4" style="height: unset !important;">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div>Не буду рисковать. Это же может повлиять на спад акций. Разве нет?</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5" style="height: unset !important;">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div>Если новость из проверенного источника, то я куплю акции, чтобы потом продать. Компания скорее всего будет скупать по цене выше рыночной, следовательно курс пойдет вверх.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff"  style="z-index: 4;height: 65vh;" id='swipper2'>
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3" id='quest1'>
+						Вы купили акции для получения дивидендов. Стоит ли их продавать сразу после даты внесения вас в реестр получателей дивидендов?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4" style="height: unset !important;">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div id="ans11">Да, я же получу двивденды с акций. Мне больше эти акции не нужны</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5" style="height: unset !important;">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div id="ans12">Нет, так как после закрытя реестра многие продают акции, и они проседают. нужно подождать до нового поднятия акций</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+				<!-- NEW -->
+				<div class="w-100pr chatb pl-2 pr-2 lvl2style1 swipperOff"  style="z-index: 3;height: 65vh;" id='swipper3'>
+					<div class="col-12 d-flex flex-row justify-content-center"><p class="mt-3 mb-3 lvl2style2">Без риска</p></div>
+					<div class="col-12 mt-3 mb-3 lvl2style3"  id='quest2'>
+						Наступило лето. Стоит ли покупать акции нефте/газодобывающий компаний?
+					</div>
+					<div class="w-100pr chat mb-3 d-flex flex-column justify-content-end lvl2style4" style="height: unset !important;">
+						<div class="col-12 d-flex flex-row justify-content-start">
+							<div  id="ans21">Сейчас же лето. Спрос на топливо спал...</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowRight.png">
+					</div>
+					<div class="w-100pr chat d-flex flex-column justify-content-end lvl2style5" style="height: unset !important;">
+						<div class="col-12 d-flex flex-row justify-content-start ">
+							<div id="ans22">Да, так как сейчас стоимость акиций таких компаний снижается, всвязи с сезонностью. При подъёме я смогу заработать.</div>
+						</div>
+						<img class="w-100pr mb-3" src="img/arrowLeft.png">
+					</div>
+				</div>
+				
+
+
+			</div>
+			<div class="col-12 p-2 mt-1">
+				<div class="w-100pr chatb pt-5 lvl2style6" style=" background-image: url('img/backDiv.svg');height: 23vh;">
+					<div id='bigtext' class="mb-4" style='font-weight: 700;font-size: 17px;'>У тебя отлично получается, ты можешь начать инвестировать сейчас с ВТБ инвестициями! </div>
+
+					<div id='smalltext'  class="d-flex flex-row justify-content-end" style='font-weight: 700;'>Начать инвестировать!</div>
+					<div id='smalltext2'  class="d-flex flex-row justify-content-end" onclick="pattern17()">продолжить игру</div>
+				</div>
+			</div>
+		</div>
+		<div class="col d-flex flex-column justify-content-end h-20vh" >
+			<div class="row lvl2style7">
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu1.png"></div>
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu22.png" onclick='window.location.href="main.html"'></div>
+				<div class="col-4 d-flex flex-row justify-content-center align-items-center"><img src="img/menu3.png" onclick='window.location.href="index.html"'></div>
+			</div>
+		</div>
+	</div>
+	<div id='kotextall'>
+		<div class="greyBlured" style="width:100vw;height: 100vh; opacity: 0.1;background-color: #090909;z-index: 10;position: absolute;top: 0;left: 0;"></div>
+		<img src="img/kotright.png" style="z-index:11;position: absolute; top: -30px; left: 0;">
+		<div class="col-10 mb-5" style="background-image: url('img/chat.png');background-size: cover; height: 113px;padding-left: 10px;color:white; position: absolute;top: 250px;left: 27px;z-index: 12;"><p id='kotext' class="pt-3" style="z-index: 15;color: black; ">Ну что же, дорогой дружочек, расскажи, зачем же ты хочешь инвестировать?</p></div>
+		<div class="axc"><div class="col-10 mb-3 mt-5 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var1"><p class="pt-3" onclick='pattern2()'>Хочу подушку безопасности</p></div>
+			<div class="col-10 mb-3 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var2"><p  onclick='pattern2()' class="pt-3">Хочу увеличить количество денег</p></div>
+			<div class="col-10 mb-3 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var3"><p  onclick='pattern2()' class="pt-3">Хочу пассивный доход</p></div>
+			<div class="col-10 mb-3 chat " style="padding-top: 16px;padding-bottom: 16px;height: unset;" id="var3"><p  onclick='pattern2()' class="pt-3">Хочу накопить на крупную покупку</p></div>
+		</div>
+	</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="sources/main.js"></script>
+<script type="text/javascript" rel="script" src="frameworks/jquery.touchSwipe.min.js"></script>
+<style type="text/css">
+	.swipperOff{
+		position: absolute;
+		top: 145px;
+		max-width: 335px;
+	}
+</style>
+
+
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+	//$('.axc').css({'position':'absolute','top':'0px','z-index':'14','display':'none'});
+	touches=0;
+	$('body').click(function (){
+		++touches;
+		switch(touches){
+			case(101):
+				$('#kotextall').css({'display':'none'});
+				break;
+		}
+	});
+	});
+</script>
+<script>
+	function pattern2() {
+		touches = 100;
+		$('#kotex').text('Получается, пришло время обучить тебя разным ситуациям на рынке');
+
+		
+	}
+	function pattern17() {
+		window.location.href='lavel4.html';
+	}
+
+</script>
+
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+	$('.axc').css({'position':'absolute','bottom':'20px','z-index':'14','min-width':'100vw','left':'30px'});
+	});
+</script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		i=1;
+		barI=1;
+		jQuery('#swipeDiv').swipe({
+    swipeStatus:function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection)
+    {
+        if (phase=="end"){ 
+            if (direction == 'right') {
+            	$('#swipper'+i).animate({right: '-360px'});
+            	switch (i) {
+				  case 1:
+
+				    barI+=1;
+				    break;
+				  case 2:
+
+				    break;
+				  case 3:
+				  	$('#swipeDiv').css({'display':'none'});
+				    break;
+				  case 4:
+
+				    barI+=1;
+				    break;
+				  case 5:
+
+				    barI+=1;
+				    break;
+
+				}
+            	i+=1;
+            }
+            if (direction == 'left') {
+               $('#swipper'+i).animate({right: '400px'});
+               switch (i) {
+				  case 1:
+
+				    barI+=1;
+				    break;
+				  case 2:
+
+				    barI+=1;
+				    break;
+				  case 3:
+				  	$('#swipeDiv').css({'display':'none'});
+				    barI+=1;
+				    break;
+				  case 4:
+
+				    break;
+				  case 5:
+				    break;
+				}
+               i+=1;
+            }
+            
+        }
+     },
+     triggerOnTouchEnd:false,
+     threshold:50
+    });
+	});
+</script>
+</html>
